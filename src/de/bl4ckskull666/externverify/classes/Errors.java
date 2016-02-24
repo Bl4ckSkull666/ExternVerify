@@ -13,6 +13,7 @@ import java.util.TreeMap;
 import java.util.UUID;
 import java.util.logging.Level;
 import org.bukkit.Bukkit;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 /**
@@ -44,6 +45,11 @@ public class Errors {
             EV.getLang().sendMessage(p, "info-error", "Error ID. %message%\\nLocalization: %local%", new String[] {"%id%","%message%","%local%"}, new String[] {String.valueOf(me.getKey()), me.getValue().getMessage(), me.getValue().getLocalization()});
             setSeen(uuid, me.getKey());
         }
+    }
+    
+    public void sendErrors(CommandSender s) {
+        for(Map.Entry<Integer, Error> me: _errors.entrySet())
+            EV.getLang().sendMessage(s, "info-error", "Error ID. %message%\\nLocalization: %local%", new String[] {"%id%","%message%","%local%"}, new String[] {String.valueOf(me.getKey()), me.getValue().getMessage(), me.getValue().getLocalization()});
     }
     
     private void setSeen(UUID uuid, int id) {

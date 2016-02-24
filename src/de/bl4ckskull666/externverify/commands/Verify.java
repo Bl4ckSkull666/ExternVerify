@@ -8,6 +8,7 @@ package de.bl4ckskull666.externverify.commands;
 import de.bl4ckskull666.externverify.EV;
 import de.bl4ckskull666.externverify.utils.Utils;
 import java.util.ArrayList;
+import java.util.UUID;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.command.Command;
@@ -28,6 +29,11 @@ public class Verify implements CommandExecutor {
                 if(arg.equalsIgnoreCase("reload") && s.hasPermission("externverify.admin")) {
                     EV.reload();
                     EV.getLang().sendMessage(s, "reloaded", "Reloaded successful Configuration, Language and Errors");
+                    return true;
+                }
+                
+                if(arg.equalsIgnoreCase("errors") && s.hasPermission("externverify.admin")) {
+                    EV.getErrors().sendErrors(s);
                     return true;
                 }
                     
