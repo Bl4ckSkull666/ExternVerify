@@ -1,0 +1,25 @@
+reloaded: '&eReloaded successful Configuration, Language and Errors.'
+need-players: '&cYou have forget to tell us player names.'
+error-in-config: '&4Missing a configuration path. ( %path% )'
+successfull-back-self: '&aSuccessful getting back what''s needed to verify you.'
+successfull-back-other: '&aSuccessful getting back what''s needed for User &6%name%&a.'
+successful-do-self: '&aSuccessful running Query for Verificate you.'
+successful-do-other: '&aSuccessful running Query to Verificate User &6%name%&a.'
+successful-end-self: '&aVerification was successful.'
+successful-end-other: '&aThe Verification of User &6%name% &awas successful.'
+failed-result-self: '&cGetting a Wrong result back for you.'
+failed-result-other: '&cWrong Result for User &6%name%&c.'
+failed-do-self: '&cFailed to run Verification Query.'
+failed-do-other: '&cFailed to run Verification Query for User &6%name%&c.'
+failed-end-self: '&cFailed to close your Verification.'
+failed-end-other: '&cFailed to close Verification for User &6%name%&c.'
+#
+#Example for Spigot Messages:
+#hover-types: ACHIEVEMENT, ITEM, TEXT ( default )  
+#chat-types: OPEN_FILE, OPEN_URL ( default ), RUN_COMMAND, SUGGEST_COMMAND 
+#example:
+#  message: 'This is the visible Text in the chat'
+#  hover-msg: 'The Message you see when you go with the Mouse over the Chat Message.'
+#  hover-type: 'TEXT'
+#  click-msg: 'A Message/command to use when you click the Chat Message'
+#  click-type: 'OPEN_URL'

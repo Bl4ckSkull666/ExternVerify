@@ -1,0 +1,22 @@
+use-auto-verify-on-join: true
+check-database:
+  connect:
+    user: root
+    pass: root
+    data: minecraft
+    host: 127.0.0.1
+    port: 3306
+  query: 'SELECT COUNT(*) AS `count` FROM `cms_users` WHERE `username` = %name% AND `uuid` = none'
+  must-back: 1
+is-successful:
+  mysql:
+    connect:
+      user: root
+      pass: root
+      data: minecraft
+      host: 127.0.0.1
+      port: 3306
+    query: 'UPDATE `cms_users` SET `uuid` = %uuid% WHERE `username` = %name%'
+  commands:
+  - money add %name% 500
+  - manuadd Registrierter -w world

@@ -1,0 +1,21 @@
+name: ExternVerify
+version: 1.0
+author: Bl4ckSkull666
+main: de.bl4ckskull666.externverify.EV
+website: http://www.AMC-Server.de
+prefix: EV
+commands:
+  verify:
+    description: 'Used to Verify your CMS/Forum Account'
+    permission: externverify.user
+    usage: /<command>
+permissions:
+  externverify.user:
+    description: Used to Verify your CMS/Forum Account
+    default: true
+  externverify.others:
+    description: Allow to verify CMS/Forum Account of others.
+    default: op
+  externverify.admin:
+    description: Allow to reload the Plugin.
+    default: op
